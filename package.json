@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint teste.ts"
+    "test:staged": "jest"
   },
   "repository": {
     "type": "git",
