@@ -1,0 +1,20 @@
+{
+  "name": "api-enquetes",
+  "version": "1.0.0",
+  "description": "API Typescript de Enquetes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipesilvaibi/api-enquetes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipesilvaibi/api-enquetes/issues"
+  },
+  "homepage": "https://github.com/felipesilvaibi/api-enquetes#readme"
+}
