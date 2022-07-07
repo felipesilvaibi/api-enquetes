@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/felipesilvaibi/api-enquetes/issues"
   },
-  "homepage": "https://github.com/felipesilvaibi/api-enquetes#readme"
+  "homepage": "https://github.com/felipesilvaibi/api-enquetes#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^4.1.3"
+  }
 }
