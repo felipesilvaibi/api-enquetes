@@ -7,11 +7,6 @@
     "test": "jest --passWithNoTests",
     "test:staged": "jest --passWithNoTests"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felipesilvaibi/api-enquetes.git"
@@ -36,6 +31,7 @@
     "husky": "4.3.8",
     "jest": "^28.1.2",
     "lint-staged": "^13.0.3",
+    "rc-config-loader": "^4.1.0",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
   }
