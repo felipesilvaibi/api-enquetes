@@ -4,7 +4,9 @@ module.exports = {
       version: '4.7.0',
       skipMD5: true
     },
-    autoStart: false,
-    instance: {}
+    instance: {
+      dbName: 'jest'
+    },
+    autoStart: false
   }
 }
