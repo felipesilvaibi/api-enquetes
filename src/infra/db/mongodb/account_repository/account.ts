@@ -3,16 +3,11 @@ import { AccountModel } from '../../../../domain/models/account'
 import { AddAccountModel } from '../../../../domain/usecases/add-account'
 import { MongoHelper } from '../helpers/mongo_helper'
 
-/**
- * @todo Adicionar função de retorno de modelo (por algum motivo não está funcionando)
- */
 export class AccountMongoRepository implements AddAccountRepository {
   public async add (accountData: AddAccountModel): Promise<AccountModel> {
     const accountCollection = MongoHelper.getCollection('accounts')
     const insertResult = await accountCollection.insertOne(accountData)
-    const account = accountCollection.findOne({ _id: insertResult.insertedId })
-
-    const accountFake = { _id: 'mongo_id', name: 'name', email: 'email', password: 'password' }
-    return MongoHelper.map(accountFake)
+    const account = await accountCollection.findOne({ _id: insertResult.insertedId })
+    return MongoHelper.map(account)
   }
 }

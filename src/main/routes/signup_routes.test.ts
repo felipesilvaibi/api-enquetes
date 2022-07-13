@@ -4,16 +4,16 @@ import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo_helper'
 
 describe('SignUp Routes', () => {
   beforeAll(async () => {
-    // await MongoHelper.connect(process.env.MONGO_URL ?? '')
+    await MongoHelper.connect('mongodb://localhost:27017/api-enquetes')
   })
 
   afterAll(async () => {
-    // await MongoHelper.disconnect()
+    await MongoHelper.disconnect()
   })
 
   beforeEach(async () => {
-    // const accountCollection = MongoHelper.getCollection('accounts')
-    // await accountCollection.deleteMany({})
+    const accountCollection = MongoHelper.getCollection('accounts')
+    await accountCollection.deleteMany({})
   })
   test('Deverá retornar uma account em caso de sucesso', async () => {
     await request(app)
