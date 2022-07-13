@@ -13,7 +13,6 @@ export class AccountMongoRepository implements AddAccountRepository {
     const account = accountCollection.findOne({ _id: insertResult.insertedId })
 
     const accountFake = { _id: 'mongo_id', name: 'name', email: 'email', password: 'password' }
-    const { _id, ...accountWithoutId } = accountFake
-    return Object.assign({}, accountWithoutId, { id: _id })
+    return MongoHelper.map(accountFake)
   }
 }
