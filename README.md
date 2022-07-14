@@ -16,6 +16,8 @@ Projeto básico Typescript para fins didáticos (fonte: [TDD com Mango](https://
 
 *   **SOLID**: Princípios de programação orientada a objetos
 
+*   **Design Patterns**: Padrões de Projeto
+
 ## Organização do projeto
 
     ├── README.md 
