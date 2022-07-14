@@ -1,6 +1,6 @@
-# mlops-basic
+# api-enquetes
 
-Projeto básico de MLOPS para fins didáticos (fonte: [TDD com Mango](https://www.udemy.com/course/tdd-com-mango/?referralCode=B53CE5CA2B9AFA5A6FA1))
+Projeto básico Typescript para fins didáticos (fonte: [TDD com Mango](https://www.udemy.com/course/tdd-com-mango/?referralCode=B53CE5CA2B9AFA5A6FA1))
 
 ## Ferramentas utilizadas
 
